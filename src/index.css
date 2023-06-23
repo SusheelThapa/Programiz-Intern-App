@@ -31,7 +31,7 @@ header {
 
 .card-horizontal {
     margin: 30px 10px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
 
     display: flex;
@@ -65,7 +65,7 @@ header {
     margin-left: 2rem;
     color: #15cca1;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .card-details>div {
@@ -74,11 +74,17 @@ header {
 
 .card-position {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .card-other-details {
-    color: gray;
+    color: rgb(138, 126, 126);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.card-other-details>div{
+    margin-right: 30px;
 }
 
 .card-programming-language {
@@ -113,3 +119,5 @@ ul>li:hover {
     background-color: #15cca1;
     cursor: pointer;
 }
+
+/* Filter section */

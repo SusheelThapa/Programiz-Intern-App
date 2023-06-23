@@ -7,6 +7,7 @@ const Card = ({
   company,
   company_logo,
   posted_on,
+  handleClick,
 }) => {
   return (
     <div className="card-horizontal">
@@ -17,13 +18,25 @@ const Card = ({
         <div className="card-details">
           <div className="card-name">{company}</div>
           <div className="card-position">{position}</div>
-          <div className="card-other-details">{timing}</div>
+          <div className="card-other-details">
+            <div className="card-time">{timing}</div>
+            <div className="card-location">{location}</div>
+          </div>
         </div>
       </div>
       <div className="card-programming-languages">
         <ul>
           {keywords.map((lang) => {
-            return <li key={lang}>{lang}</li>;
+            return (
+              <li
+                key={lang}
+                onClick={() => {
+                  handleClick(lang);
+                }}
+              >
+                {lang}
+              </li>
+            );
           })}
         </ul>
       </div>
