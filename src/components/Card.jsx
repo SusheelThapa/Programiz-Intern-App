@@ -1,24 +1,30 @@
-const Card = () => {
+/* eslint-disable react/prop-types */
+const Card = ({
+  position,
+  timing,
+  location,
+  keywords,
+  company,
+  company_logo,
+  posted_on,
+}) => {
   return (
     <div className="card-horizontal">
       <div>
         <div className="card-image">
-          <img
-            src="https://storage.googleapis.com/programiz-static/hiring/software/job-listing-page-challenge/logos/docsumo-logo.jpeg"
-            alt="company logo"
-          />
+          <img src={company_logo} alt="company logo" />
         </div>
         <div className="card-details">
-          <div className="card-languages">Photoshop</div>
-          <div className="card-position">Senior Frontend Developer</div>
-          <div className="card-other-details">Full Time</div>
+          <div className="card-name">{company}</div>
+          <div className="card-position">{position}</div>
+          <div className="card-other-details">{timing}</div>
         </div>
       </div>
       <div className="card-programming-languages">
         <ul>
-          <li>Full Stack</li>
-          <li>CSS</li>
-          <li>HTML</li>
+          {keywords.map((lang) => {
+            return <li key={lang}>{lang}</li>;
+          })}
         </ul>
       </div>
     </div>

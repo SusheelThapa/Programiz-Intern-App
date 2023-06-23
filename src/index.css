@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif'
+
 }
 
 header {
@@ -17,19 +19,17 @@ header {
 /* Card */
 
 .card-horizontal {
-    margin: 10px;
+    margin: 30px 10px;
     padding: 10px;
+    border-radius: 10px;
 
-    border-left: solid 8px;
-    border-left-color: #15cca1;
     display: flex;
 
     justify-content: space-between;
     align-items: center;
-
-    box-shadow: 0px -2px 107px 28px rgba(0, 0, 0, 0.18);
-    -webkit-box-shadow: 0px -2px 107px 28px rgba(0, 0, 0, 0.18);
-    -moz-box-shadow: 0px -2px 107px 28px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px 0px 68px -32px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 68px -32px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 68px -32px rgba(0, 0, 0, 0.75);
 }
 
 .card-horizontal>div {
@@ -55,6 +55,10 @@ header {
     color: #15cca1;
     font-size: 1rem;
     font-weight: 800;
+}
+
+.card-details>div {
+    margin: 10px 5px;
 }
 
 .card-position {
