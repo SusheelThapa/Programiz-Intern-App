@@ -83,7 +83,8 @@ header {
     justify-content: left;
     align-items: center;
 }
-.card-other-details>div{
+
+.card-other-details>div {
     margin-right: 30px;
 }
 
@@ -121,3 +122,17 @@ ul>li:hover {
 }
 
 /* Filter section */
+.filter{
+    justify-content: center;
+}
+.filter>ul>li {
+    margin: 10px;
+}
+
+.filter>ul>li>span {
+    margin-left: 10px;
+}
+
+.filter>ul>li>span:hover {
+    color: red;
+}

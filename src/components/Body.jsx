@@ -23,7 +23,6 @@ const Body = () => {
     });
   }
 
-  console.log(filtered_data);
   return (
     <section id="body">
       {filter.length != 0 && <Filter filter={filter} />}
