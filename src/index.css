@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aqua;
+    height: 10vh;
+}
+
+/* CSS of body */
+#body {
+    margin: 0 5vw;
+}
+
+/* Card */
+
+.card-horizontal {
+    margin: 10px;
+    padding: 10px;
+
+    border-left: solid 8px;
+    border-left-color: #15cca1;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px -2px 107px 28px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px -2px 107px 28px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px -2px 107px 28px rgba(0, 0, 0, 0.18);
+}
+
+.card-horizontal>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-image {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.card-image>img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.card-details {
+    margin-left: 2rem;
+    color: #15cca1;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.card-position {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.card-other-details {
+    color: gray;
+}
+
+.card-programming-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+ul>li {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 550;
+    color: #018a6a;
+    background-color: #c0e2db;
+}
+
+ul>li:hover {
+    color: white;
+    background-color: #15cca1;
+    cursor: pointer;
+}

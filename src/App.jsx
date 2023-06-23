@@ -1,6 +1,13 @@
+import Header from "./components/Header";
 
+import Body from "./components/Body";
 function App() {
-  return <>Hello World</>;
+  return (
+    <>
+      <Header />
+      <Body />
+    </>
+  );
 }
 
 export default App;
