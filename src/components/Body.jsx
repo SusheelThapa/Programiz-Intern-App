@@ -13,11 +13,21 @@ const Body = () => {
       setFilter([...filter, clickedItems]);
     }
   };
+  let filtered_data = datas;
 
+  if (filter.length > 0) {
+    filtered_data = datas.filter(function (item) {
+      return item.keywords.some(function (keyword) {
+        return filter.includes(keyword);
+      });
+    });
+  }
+
+  console.log(filtered_data);
   return (
     <section id="body">
       {filter.length != 0 && <Filter filter={filter} />}
-      {datas.map((data) => {
+      {filtered_data.map((data) => {
         const {
           position,
           timing,
