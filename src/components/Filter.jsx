@@ -1,4 +1,4 @@
-const Filter = ({ filter }) => {
+const Filter = ({ filter, handleRemoveFilter }) => {
   return (
     <section className="filter card-horizontal">
       <ul>
@@ -6,7 +6,11 @@ const Filter = ({ filter }) => {
           return (
             <li key={value}>
               {value}
-              <span>
+              <span
+                onClick={() => {
+                  handleRemoveFilter(value);
+                }}
+              >
                 <i className="bi bi-dash-circle"></i>
               </span>
             </li>

@@ -13,6 +13,15 @@ const Body = () => {
       setFilter([...filter, clickedItems]);
     }
   };
+
+  const handleRemoveFilter = (removedFilter) => {
+    let new_filter = filter.filter((value) => {
+      return value !== removedFilter;
+    });
+    console.log(new_filter);
+    setFilter(new_filter);
+  };
+
   let filtered_data = datas;
 
   if (filter.length > 0) {
@@ -25,7 +34,9 @@ const Body = () => {
 
   return (
     <section id="body">
-      {filter.length != 0 && <Filter filter={filter} />}
+      {filter.length != 0 && (
+        <Filter filter={filter} handleRemoveFilter={handleRemoveFilter} />
+      )}
       {filtered_data.map((data) => {
         const {
           position,

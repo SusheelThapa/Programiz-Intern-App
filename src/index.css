@@ -122,9 +122,10 @@ ul>li:hover {
 }
 
 /* Filter section */
-.filter{
+.filter {
     justify-content: center;
 }
+
 .filter>ul>li {
     margin: 10px;
 }
