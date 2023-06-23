@@ -1,5 +1,5 @@
 const Header = () => {
-  return <header></header>;
+  return <header>Programiz Intership Challange</header>;
 };
 
 export default Header;

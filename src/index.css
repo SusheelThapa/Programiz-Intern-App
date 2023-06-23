@@ -7,8 +7,19 @@
 }
 
 header {
-    background-color: aqua;
-    height: 10vh;
+    padding: 20px;
+    background: rgb(8, 2, 108);
+    background: linear-gradient(90deg, rgba(8, 2, 108, 1) 14%, rgba(11, 9, 136, 1) 49%, rgba(9, 9, 121, 0.8141631652661064) 100%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+    ;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* CSS of body */
@@ -39,8 +50,8 @@ header {
 }
 
 .card-image {
-    margin: 10px;
-    padding: 10px;
+    margin: 15px;
+    padding: 15px;
 
 }
 
@@ -91,6 +102,7 @@ ul>li {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    font-size: 1.3rem;
     font-weight: 550;
     color: #018a6a;
     background-color: #c0e2db;
