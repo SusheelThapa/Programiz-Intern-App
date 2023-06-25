@@ -17,6 +17,7 @@ const Filter = ({ filter, handleRemoveFilter }) => {
           );
         })}
       </ul>
+      <div className="clear-filter">Clear</div>
     </section>
   );
 };
