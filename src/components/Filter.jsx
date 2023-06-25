@@ -1,4 +1,4 @@
-const Filter = ({ filter, handleRemoveFilter }) => {
+const Filter = ({ filter, handleRemoveFilter, handleClearAllFilter }) => {
   return (
     <section className="filter card-horizontal">
       <ul>
@@ -17,6 +17,14 @@ const Filter = ({ filter, handleRemoveFilter }) => {
           );
         })}
       </ul>
+      <div
+        className="clear-filter"
+        onClick={() => {
+          handleClearAllFilter();
+        }}
+      >
+        Clear
+      </div>
     </section>
   );
 };
