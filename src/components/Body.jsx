@@ -21,6 +21,9 @@ const Body = () => {
     console.log(new_filter);
     setFilter(new_filter);
   };
+  const handleClearAllFilter = () => {
+    setFilter([]);
+  };
 
   let filtered_data = datas;
 
@@ -35,7 +38,11 @@ const Body = () => {
   return (
     <section id="body">
       {filter.length != 0 && (
-        <Filter filter={filter} handleRemoveFilter={handleRemoveFilter} />
+        <Filter
+          filter={filter}
+          handleRemoveFilter={handleRemoveFilter}
+          handleClearAllFilter={handleClearAllFilter}
+        />
       )}
       {filtered_data.map((data) => {
         const {
